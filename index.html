@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fun Facts App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+      <h2>🌐 Info Center</h2>
+    </nav>
+
+  <div class="container">
+    <h1>Fun Facts and Info Generator</h1>
+
+    <!-- Cat Fact Section -->
+    <div class="card">
+      <h2>🐱 Cat Fact</h2>
+      <p id="quote">Click the button to get a fun cat fact!</p>
+      <button onclick="getQuote()">Get Cat Fact</button>
+    </div>
+
+    <!-- Weather Section -->
+    <div class="card">
+      <h2>🌤️ Weather</h2>
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button onclick="getWeather()">Get Weather</button>
+      <p id="weatherResult">Weather data will appear here.</p>
+    </div>
+
+    <!-- News Section -->
+    <div class="card">
+      <h2>📰 Latest News</h2>
+      <button onclick="getNews()">Get Top Headlines (US)</button>
+      <!-- Search Bar -->
+      <input type="text" id="newsQuery" placeholder="Enter keyword (e.g. AI, sports)" />
+      <button onclick="searchNews()">Search News</button>
+      <ul id="newsList"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
