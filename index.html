@@ -1,46 +1,67 @@
 <!DOCTYPE html>
+<!-- This declares the document type and version of HTML -->
 <html lang="en">
 <head>
+  <!-- Sets character encoding to UTF-8 for full character support -->
   <meta charset="UTF-8" />
+
+  <!-- Makes the webpage responsive on all devices (mobile, tablet, etc.) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title of the webpage that appears on the browser tab -->
   <title>Fun Facts App</title>
+
+  <!-- Link to external CSS file for styling -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    <nav class="navbar">
-      <h2>🌐 Info Center</h2>
-    </nav>
+  <!-- Navigation bar at the top -->
+  <nav class="navbar">
+    <h2>🌐 Info Center</h2> <!-- Title shown in the navbar -->
+  </nav>
 
+  <!-- Main container for all content -->
   <div class="container">
-    <h1>Fun Facts and Info Generator</h1>
+    <h1>Fun Facts and Info Generator</h1> <!-- Page heading -->
 
-    <!-- Cat Fact Section -->
+    <!-- ====================== Cat Fact Section ====================== -->
     <div class="card">
-      <h2>🐱 Cat Fact</h2>
-      <p id="quote">Click the button to get a fun cat fact!</p>
-      <button onclick="getQuote()">Get Cat Fact</button>
+      <h2>🐱 Cat Fact</h2> <!-- Section heading -->
+      <p id="quote">Click the button to get a fun cat fact!</p> <!-- Where cat fact will appear -->
+      <button onclick="getQuote()">Get Cat Fact</button> <!-- Button to call getQuote() function -->
     </div>
 
-    <!-- Weather Section -->
+    <!-- ====================== Weather Section ====================== -->
     <div class="card">
-      <h2>🌤️ Weather</h2>
+      <h2>🌤️ Weather</h2> <!-- Section heading -->
+      <!-- Input box for user to enter city name -->
       <input type="text" id="cityInput" placeholder="Enter city name" />
+      <!-- Button to call getWeather() function -->
       <button onclick="getWeather()">Get Weather</button>
+      <!-- Paragraph to display weather result -->
       <p id="weatherResult">Weather data will appear here.</p>
     </div>
 
-    <!-- News Section -->
+    <!-- ====================== News Section ====================== -->
     <div class="card">
-      <h2>📰 Latest News</h2>
+      <h2>📰 Latest News</h2> <!-- Section heading -->
+
+      <!-- Button to call getNews() function and fetch top headlines -->
       <button onclick="getNews()">Get Top Headlines (US)</button>
-      <!-- Search Bar -->
+
+      <!-- Search bar to allow user to enter a keyword for custom news -->
       <input type="text" id="newsQuery" placeholder="Enter keyword (e.g. AI, sports)" />
+
+      <!-- Button to search news based on the entered keyword -->
       <button onclick="searchNews()">Search News</button>
+
+      <!-- Unordered list where news articles will be displayed -->
       <ul id="newsList"></ul>
     </div>
-
   </div>
 
+  <!-- Link to the external JavaScript file -->
   <script src="script.js"></script>
 </body>
 </html>
