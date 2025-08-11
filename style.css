@@ -1,0 +1,123 @@
+/* Reset default browser styles for all elements */
+* {
+    margin: 0; /* Remove default outer spacing */
+    padding: 0; /* Remove default inner spacing */
+    font-family: 'Poppins', sans-serif; /* Use Poppins font, fallback to sans-serif */
+    box-sizing: border-box; /* Include padding & border in element's total size */
+}
+
+/* Page background color */
+body {
+    background: #222; /* Dark background color */
+}
+
+/* Main weather card container */
+.card {
+    width: 90%; /* Take 90% of screen width on small devices */
+    max-width: 470px; /* Limit maximum width */
+    background: linear-gradient(135deg, #00feba, #5b548a); /* Gradient background */
+    color: #fff; /* White text */
+    margin: 100px auto 0; /* Center horizontally with top margin */
+    border-radius: 20px; /* Rounded corners */
+    padding: 40px 35px; /* Inner space */
+    text-align: center; /* Center text inside */
+}
+
+/* Search bar container */
+.search {
+    width: 100%; /* Full width of parent */
+    display: flex; /* Align children horizontally */
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space out input and button */
+}
+
+/* Input field styling */
+.search input {
+    border: 0; /* Remove border */
+    outline: 0; /* Remove focus outline */
+    background: #ebfffc; /* Light background color */
+    color: #555; /* Text color inside input */
+    padding: 10px 25px; /* Inner padding */
+    height: 60px; /* Fixed height */
+    border-radius: 30px; /* Rounded pill shape */
+    flex: 1; /* Take up available space */
+    margin-right: 16px; /* Gap between input and button */
+    font-size: 18px; /* Bigger text size */
+}
+
+/* Search button styling */
+.search button {
+    border: 0; /* Remove border */
+    outline: 0; /* Remove focus outline */
+    background: #ebfffc; /* Light background */
+    border-radius: 50%; /* Circle shape */
+    width: 60px; /* Fixed width */
+    height: 60px; /* Fixed height */
+    cursor: pointer; /* Pointer on hover */
+}
+
+/* Icon inside search button */
+.search button img {
+    width: 16px; /* Small size for search icon */
+}
+
+/* Main weather icon (sun, cloud, rain etc.) */
+.weather-icon {
+    width: 170px; /* Large size */
+    margin-top: 30px; /* Space above icon */
+}
+
+/* Big temperature text */
+.weather h1 {
+    font-size: 80px; /* Very large */
+    font-weight: 500; /* Medium weight */
+}
+
+/* City name text */
+.weather h2 {
+    font-size: 45px; /* Large */
+    font-weight: 400; /* Light weight */
+    margin-top: -10px; /* Pull up slightly */
+}
+
+/* Weather details container (humidity & wind) */
+.details {
+    display: flex; /* Side-by-side layout */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Push apart items */
+    padding: 0 20px; /* Inner side spacing */
+    margin-top: 50px; /* Space above */
+}
+
+/* Each column inside details */
+.col {
+    display: flex; /* Align icon & text side by side */
+    align-items: center; /* Center vertically */
+    text-align: left; /* Left-align text */
+}
+
+/* Weather detail icons (humidity, wind) */
+.col img {
+    width: 40px; /* Small icon size */
+    margin-right: 10px; /* Gap between icon & text */
+}
+
+/* Numbers for humidity & wind speed */
+.humidity, .wind {
+    font-size: 28px; /* Big text */
+    margin-top: -6px; /* Adjust vertical alignment */
+}
+
+/* Hide weather section by default (until search is done) */
+.weather {
+    display: none;
+}
+
+/* Error message styling */
+.error {
+    text-align: left; /* Align text to left */
+    margin-left: 10px; /* Small left margin */
+    font-size: 14px; /* Small text */
+    margin-top: 10px; /* Space above */
+    display: none; /* Hidden by default */
+}
