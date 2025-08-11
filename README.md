@@ -24,3 +24,7 @@ GitHub – A cloud-based hosting service for Git repositories, enabling collabor
 Visual Studio Code (VS Code) – A popular code editor used for writing, editing, and managing code with Git integration.
 
 Command Line / Terminal – Used to execute Git commands for repository setup, renaming, and synchronization.
+
+#OUTPUT : 
+
+<img width="398" height="421" alt="Image" src="https://github.com/user-attachments/assets/2cf6f7a1-4bfa-430f-a649-973372c5fbd4" />
